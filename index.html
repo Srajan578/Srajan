@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Srajan Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Srajan's Portfolio</div>
+
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="right">
+
+                <ul class="menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#skills">About</a></li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Srajan,</span></div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="" />
+            </div>
+        </section>
+        <hr />
+        <section id="skills" class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>My Skills</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="java.png" alt="" />
+                    <div class="vertical-title">JAVA</div>
+                    <div class="vertical-desc">
+                        I have a strong command of Java. I use Java primarily for solving
+                        Data Structures and Algorithms (DSA) problems. In Java, I work
+                        with a wide range of data types. I'm skilled in creating and
+                        implementing loops to iterate through data structures and perform
+                        repetitive tasks. Additionally, I can utilize conditional
+                        statements to make decisions within my code. I also create and
+                        optimize functions to modularize code, improving reusability and
+                        maintainability, which is especially valuable when tackling
+                        complex DSA problems in Java.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="dsa.jpg" alt="" />
+                    <div class="vertical-title">Data STRUCTURE & ALGORITHMS</div>
+                    <div class="vertical-desc">
+                        I'm actively engaged in learning DSA, with a focus on
+                        understanding fundamental data structures like arrays, linked
+                        lists, trees, graphs, and dynamic programming, as well as
+                        algorithms for sorting, searching, and optimization. This
+                        knowledge enhances my problem-solving abilities and algorithmic
+                        thinking, crucial for efficient programming.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="" />
+                    <div class="vertical-title">HTML</div>
+                    <div class="vertical-desc">
+                        I am proficient in HTML, the foundational language for creating
+                        web pages. I can structure content, add links, images, forms, and
+                        more to build the backbone of websites.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="css.png" alt="" />
+                    <div class="vertical-title">CSS</div>
+                    <div class="vertical-desc">
+                        I am skilled in CSS (Cascading Style Sheets), which allows me to
+                        style and format web pages. I can control the layout, colors,
+                        fonts, and overall visual presentation of websites to create a
+                        polished and aesthetically pleasing user experience.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="js.png" alt="" />
+                    <div class="vertical-title">JAVASCRIPT</div>
+                    <div class="vertical-desc">
+                        I have extensive experience in JavaScript, enabling me to create
+                        dynamic and interactive web applications. I'm proficient in
+                        JavaScript frameworks, allowing for the development of web
+                        applications that can respond to user interactions in real-time.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="reactjs.png" alt="" />
+                    <div class="vertical-title">REACT JS</div>
+                    <div class="vertical-desc">
+                        I'm skilled in React.js, a popular JavaScript library, which
+                        empowers me to build modern and efficient user interfaces for web
+                        applications. I can create single-page applications (SPAs) with a
+                        strong focus on component-based architecture, providing a seamless
+                        and responsive user experience.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: [
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+                "Web Developer!",
+                "Graphic Designer!",
+                "Java Developer!",
+            ],
+            typeSpeed: 50,
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function toggleMenu() {
+            var menuList = document.querySelector('.menu-list');
+            menuList.classList.toggle('active');
+        }
+
+    </script>
+</body>
+
+</html>
